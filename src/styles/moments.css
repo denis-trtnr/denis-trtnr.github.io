@@ -1,0 +1,30 @@
+.moments-section {
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-xl);
+}
+
+.moments-header {
+  margin-bottom: var(--space-lg);
+  max-width: var(--editorial-reading-width);
+}
+
+.moments-section-title {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--color-text-primary);
+  letter-spacing: -0.03em;
+  margin-bottom: 0.2rem;
+}
+
+.moments-section-lead {
+  font-size: var(--text-md);
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+@media (max-width: 640px) {
+  .moments-section {
+    padding-top: var(--space-lg);
+    padding-bottom: var(--space-lg);
+  }
+}

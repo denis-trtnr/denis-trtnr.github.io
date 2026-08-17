@@ -1,0 +1,94 @@
+.social-links-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.social-badge-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  background-color: var(--color-surface);
+  border: 1.5px solid var(--color-border);
+  padding: 0.45rem 0.85rem;
+  border-radius: var(--radius-sm);
+  transition: all var(--duration-fast) ease;
+  letter-spacing: -0.01em;
+}
+
+.social-badge-link:hover {
+  background-color: var(--color-navy);
+  color: #FFFFFF;
+  border-color: var(--color-navy);
+  transform: translateY(-1px);
+}
+
+.social-icon {
+  flex-shrink: 0;
+}
+
+.social-badge-link:hover .social-icon {
+  color: #FFFFFF;
+}
+
+/* Email Group */
+.email-badge-group {
+  display: inline-flex;
+  align-items: stretch;
+  border-radius: var(--radius-sm);
+}
+
+.email-badge-link {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: none;
+}
+
+.email-address {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  letter-spacing: -0.01em;
+}
+
+.email-copy-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-surface);
+  border: 1.5px solid var(--color-border);
+  border-left: 1px solid var(--color-border-subtle);
+  border-top-right-radius: var(--radius-sm);
+  border-bottom-right-radius: var(--radius-sm);
+  padding: 0 0.6rem;
+  color: var(--color-text-muted);
+  transition: all var(--duration-fast) ease;
+}
+
+.email-copy-btn:hover {
+  background-color: var(--color-bg-subtle);
+  color: var(--color-navy);
+  border-color: var(--color-border-hover);
+}
+
+.copied-icon {
+  color: #15803D; /* dark green */
+}
+
+@media (max-width: 640px) {
+  .social-links-container {
+    gap: 0.5rem;
+  }
+
+  .social-badge-link {
+    padding: 0.4rem 0.75rem;
+    font-size: var(--text-xs);
+  }
+
+  .email-address {
+    font-size: var(--text-xs);
+  }
+}
