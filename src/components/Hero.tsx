@@ -33,11 +33,13 @@ export const Hero: React.FC<HeroProps> = ({ content }) => {
             {content.name}
           </h1>
           <p className="hero-title">{content.title}</p>
-          <div className="hero-intro">
-            {content.intro.map((paragraph, index) => (
-              <p key={index}>{paragraph}</p>
-            ))}
-          </div>
+          {content.intro && content.intro.length > 0 && (
+            <div className="hero-intro">
+              {content.intro.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
+            </div>
+          )}
 
           <div className="hero-social-wrap">
             <SocialLinks social={content.social} />

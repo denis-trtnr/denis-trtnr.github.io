@@ -1,27 +1,27 @@
 :root {
-  /* High-Contrast Color Palette */
-  --color-bg: #F7F5F0;
-  --color-bg-subtle: #EDE7DD;
-  --color-bg-tint: #E5DDD0;
+  /* Cool Slate & Crisp Steel Palette (No Beige / No Sand) */
+  --color-bg: #F1F5F9;
+  --color-bg-subtle: #E2E8F0;
+  --color-bg-tint: #CBD5E1;
   --color-surface: #FFFFFF;
-  --color-surface-translucent: rgba(247, 245, 240, 0.92);
+  --color-surface-translucent: rgba(241, 245, 249, 0.88);
 
-  /* Crisper, More Defined Borders */
-  --color-border: #D5CBB9;
-  --color-border-subtle: #E6DFD3;
-  --color-border-hover: #B5A892;
+  /* Crisp Defined Steel-Slate Borders */
+  --color-border: #CBD5E1;
+  --color-border-subtle: #E2E8F0;
+  --color-border-hover: #0F172A;
 
-  /* Stronger Text Contrasts */
-  --color-text-primary: #0F1115;
-  --color-text-secondary: #363A42;
-  --color-text-muted: #5A606C;
+  /* Strong Dark Typography */
+  --color-text-primary: #0B1120;
+  --color-text-secondary: #334155;
+  --color-text-muted: #64748B;
 
-  /* Deep Navy Accent */
-  --color-navy: #0B1726;
-  --color-navy-hover: #15273E;
-  --color-navy-tint: rgba(11, 23, 38, 0.06);
+  /* Deep Authority Navy Accent */
+  --color-navy: #0F172A;
+  --color-navy-hover: #1E293B;
+  --color-navy-tint: rgba(15, 23, 42, 0.06);
   
-  --color-focus: #0B1726;
+  --color-focus: #0F172A;
 
   /* Typography */
   --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
@@ -36,9 +36,9 @@
   --text-xl: clamp(1.4375rem, 1.3rem + 0.7vw, 1.75rem);
   --text-2xl: clamp(1.75rem, 1.55rem + 1vw, 2.125rem);
   --text-3xl: clamp(2rem, 1.75rem + 1.4vw, 2.75rem);
-  --text-hero: clamp(2.25rem, 1.95rem + 2vw, 3.5rem);
+  --text-hero: clamp(1.85rem, 1.5rem + 2vw, 3.5rem);
 
-  /* Tightened Spacing Scale (Reduced excessive whitespace) */
+  /* Spacing Scale */
   --space-2xs: 0.2rem;
   --space-xs: 0.4rem;
   --space-sm: 0.65rem;

@@ -1,0 +1,48 @@
+{
+  "id": "texas-exchange",
+  "index": "03",
+  "year": "2017",
+  "location": "Texas, USA",
+  "title": "Leaving home early",
+  "subtitle": "Six months in an unfamiliar environment.",
+  "teaser": "Six months living and studying in Texas in 10th grade — an early lesson in navigating unfamiliar environments and adaptability.",
+  "tags": ["Texas", "Exchange", "Adaptability"],
+  "description": [
+    "During 10th grade, I spent approximately six months living and studying in Texas as an exchange student.",
+    "Navigating a completely new environment, foreign language, and unfamiliar culture at a young age became a defining lesson in adaptability and self-reliance — establishing a lifelong curiosity for entering uncharted territory.",
+    "From high school football games under Friday night lights to ranch life, it was a world away from anything familiar — and exactly that unfamiliarity turned out to be the point."
+  ],
+  "anecdote": null,
+  "researchTopics": [],
+  "coverImage": {
+    "webpSrc": "/images/texas/texas-football.webp",
+    "jpegSrc": "/images/texas/texas-football.jpg",
+    "alt": "High school American football players celebrating a win on the field at night",
+    "caption": "Friday night lights — high school football in Texas",
+    "aspectRatio": "landscape"
+  },
+  "images": [
+    {
+      "webpSrc": "/images/texas/texas-football.webp",
+      "jpegSrc": "/images/texas/texas-football.jpg",
+      "alt": "High school American football players celebrating on the field under stadium lights",
+      "caption": "Friday night football — school game in Texas",
+      "aspectRatio": "landscape"
+    },
+    {
+      "webpSrc": "/images/texas/texas-ranch.webp",
+      "jpegSrc": "/images/texas/texas-ranch.jpg",
+      "alt": "Two teenagers shooting a rifle at a ranch in the Texas countryside",
+      "caption": "Ranch life — nothing quite like Texas",
+      "aspectRatio": "portrait"
+    },
+    {
+      "webpSrc": "/images/texas/texas-prom.webp",
+      "jpegSrc": "/images/texas/texas-prom.jpg",
+      "alt": "Prom group photo on a wooden bridge surrounded by greenery",
+      "caption": "Prom night in Texas — a very American milestone",
+      "aspectRatio": "landscape"
+    }
+  ],
+  "videos": []
+}

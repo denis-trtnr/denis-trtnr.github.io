@@ -51,9 +51,11 @@
   font-size: var(--text-hero);
   font-weight: 700;
   color: var(--color-text-primary);
-  line-height: 1.08;
+  line-height: 1.1;
   letter-spacing: -0.035em;
   margin-bottom: var(--space-xs);
+  word-break: keep-all;
+  text-wrap: balance;
 }
 
 .hero-title {
@@ -61,7 +63,7 @@
   font-weight: 600;
   color: var(--color-navy);
   letter-spacing: -0.015em;
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-lg);
   line-height: 1.4;
 }
 
@@ -74,7 +76,7 @@
 }
 
 .hero-social-wrap {
-  margin-top: var(--space-2xs);
+  margin-top: 0;
 }
 
 /* Animations */

@@ -8,11 +8,23 @@ export interface ImageItem {
 
 export interface VideoItem {
   src: string;
-  posterSrc?: string; // optional static thumbnail
+  posterSrc?: string;
   caption?: string;
-  label?: string;     // short label e.g. "Onboard Lap" shown before play
+  label?: string;
 }
 
+export interface ResearchTopic {
+  type: string;
+  title: string;
+}
+
+export interface Anecdote {
+  headline: string;
+  text: string;
+}
+
+// Moment — mirrors the JSON schema in src/moments/*.json
+// All moments are auto-discovered at build time via import.meta.glob
 export interface Moment {
   id: string;
   index: string;
@@ -23,17 +35,11 @@ export interface Moment {
   teaser: string;
   tags?: string[];
   description: string[];
-  anecdote?: {
-    headline: string;
-    text: string;
-  };
-  researchTopics?: {
-    type: string;
-    title: string;
-  }[];
+  anecdote?: Anecdote | null;
+  researchTopics?: ResearchTopic[];
+  coverImage?: ImageItem;
   images?: ImageItem[];
   videos?: VideoItem[];
-  coverImage?: ImageItem;
 }
 
 export interface SocialLinksData {

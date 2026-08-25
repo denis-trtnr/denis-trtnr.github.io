@@ -1,0 +1,76 @@
+/* ============================================================
+   About Section — Clean, Understated Editorial Flow
+   ============================================================ */
+
+.about-section {
+  padding-top: var(--space-2xl);
+  padding-bottom: var(--space-2xl);
+}
+
+/* ── Header on top ───────────────────────────────────────── */
+.about-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-bottom: var(--space-xl);
+}
+
+.about-title {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--color-text-primary);
+  letter-spacing: -0.03em;
+}
+
+.about-lead {
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+  line-height: 1.55;
+}
+
+/* ── Body ────────────────────────────────────────────────── */
+.about-body {
+  max-width: 78ch;
+}
+
+.about-prose {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.about-prose p {
+  font-size: var(--text-base);
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+}
+
+.about-link {
+  color: var(--color-text-primary);
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: var(--color-border);
+  text-underline-offset: 3px;
+  transition: color var(--duration-fast) ease, text-decoration-color var(--duration-fast) ease;
+}
+
+.about-link:hover {
+  color: var(--color-navy);
+  text-decoration-color: var(--color-navy);
+}
+
+/* ── Responsive ──────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .about-section {
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-xl);
+  }
+
+  .about-header {
+    margin-bottom: var(--space-lg);
+  }
+
+  .about-prose {
+    gap: 1.1rem;
+  }
+}

@@ -15,6 +15,7 @@
   justify-content: space-between;
   align-items: center;
   height: 4.25rem;
+  gap: var(--space-md);
 }
 
 .nav-brand {
@@ -25,6 +26,8 @@
   display: flex;
   align-items: center;
   gap: var(--space-xs);
+  white-space: nowrap;
+  flex-shrink: 0;
   transition: opacity var(--duration-fast) ease;
 }
 
@@ -37,6 +40,7 @@
   align-items: center;
   gap: clamp(1rem, 2.5vw, 2rem);
   list-style: none;
+  flex-shrink: 0;
 }
 
 .nav-link {
@@ -46,6 +50,11 @@
   transition: color var(--duration-fast) ease;
   position: relative;
   padding: 0.25rem 0;
+  white-space: nowrap;
+}
+
+.nav-link-short {
+  display: none;
 }
 
 .nav-link:hover {
@@ -72,6 +81,15 @@
     height: 3.75rem;
   }
   .nav-links {
-    gap: 1rem;
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .nav-link-full {
+    display: none;
+  }
+  .nav-link-short {
+    display: inline;
   }
 }
