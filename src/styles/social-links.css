@@ -22,7 +22,7 @@
 
 .social-badge-link:hover {
   background-color: var(--color-navy);
-  color: #FFFFFF;
+  color: var(--color-navy-contrast);
   border-color: var(--color-navy);
   transform: translateY(-1px);
 }
@@ -34,7 +34,7 @@
 }
 
 .social-badge-link:hover .social-icon {
-  color: #FFFFFF;
+  color: var(--color-navy-contrast);
 }
 
 /* Email Group */

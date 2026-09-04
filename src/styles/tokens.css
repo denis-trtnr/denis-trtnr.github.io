@@ -20,8 +20,11 @@
   --color-navy: #0F172A;
   --color-navy-hover: #1E293B;
   --color-navy-tint: rgba(15, 23, 42, 0.06);
+  --color-navy-contrast: #FFFFFF;
   
   --color-focus: #0F172A;
+  --shadow-card: 0 6px 24px -6px rgba(11, 23, 38, 0.12), 0 1px 3px rgba(0, 0, 0, 0.04);
+  --shadow-hover: 0 12px 32px rgba(15, 23, 42, 0.09);
 
   /* Typography */
   --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
@@ -65,3 +68,33 @@
   --radius-md: 8px;
   --radius-lg: 12px;
 }
+
+[data-theme="dark"] {
+  /* Deep Midnight Slate (Dark Mode — Optional / Toggleable) */
+  --color-bg: #0B1120;
+  --color-bg-subtle: #151F32;
+  --color-bg-tint: #1E293B;
+  --color-surface: #111827;
+  --color-surface-translucent: rgba(11, 17, 32, 0.90);
+
+  /* Refined dark borders */
+  --color-border: #1E293B;
+  --color-border-subtle: #162032;
+  --color-border-hover: #38BDF8;
+
+  /* Crisp high-contrast yet soothing typography */
+  --color-text-primary: #F8FAFC;
+  --color-text-secondary: #94A3B8;
+  --color-text-muted: #64748B;
+
+  /* Electric Ice / Sky Cyan accent */
+  --color-navy: #38BDF8;
+  --color-navy-hover: #7DD3FC;
+  --color-navy-tint: rgba(56, 189, 248, 0.12);
+  --color-navy-contrast: #0B1120;
+
+  --color-focus: #38BDF8;
+  --shadow-card: 0 6px 24px -6px rgba(0, 0, 0, 0.45), 0 1px 3px rgba(0, 0, 0, 0.2);
+  --shadow-hover: 0 12px 32px rgba(0, 0, 0, 0.5);
+}
+

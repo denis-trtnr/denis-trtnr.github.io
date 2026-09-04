@@ -35,12 +35,54 @@
   opacity: 0.75;
 }
 
+.nav-right-group {
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 2.5vw, 2rem);
+}
+
 .nav-links {
   display: flex;
   align-items: center;
   gap: clamp(1rem, 2.5vw, 2rem);
   list-style: none;
   flex-shrink: 0;
+}
+
+/* ── Theme Toggle Button ──────────────────────────────────── */
+.theme-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.35rem;
+  height: 2.35rem;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--color-border);
+  background-color: var(--color-surface);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  padding: 0;
+  flex-shrink: 0;
+  transition:
+    border-color var(--duration-fast) ease,
+    background-color var(--duration-fast) ease,
+    color var(--duration-fast) ease,
+    transform var(--duration-fast) ease;
+}
+
+.theme-toggle-btn:hover {
+  border-color: var(--color-navy);
+  color: var(--color-navy);
+  background-color: var(--color-bg-subtle);
+  transform: translateY(-1px);
+}
+
+.theme-toggle-icon {
+  transition: transform 0.3s var(--ease-editorial);
+}
+
+.theme-toggle-btn:hover .theme-toggle-icon {
+  transform: rotate(15deg);
 }
 
 .nav-link {

@@ -206,7 +206,7 @@
 .moments-toggle-btn:hover {
   border-color: var(--color-navy);
   background-color: var(--color-navy);
-  color: #FFFFFF;
+  color: var(--color-navy-contrast);
   transform: translateY(-1px);
   box-shadow: 0 4px 14px rgba(15, 23, 42, 0.12);
 }
