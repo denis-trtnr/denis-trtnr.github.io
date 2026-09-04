@@ -20,8 +20,11 @@ lerna-debug.log*
 !.vscode/extensions.json
 .idea
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+
+# Raw assets & local media
+assets/
+*.mp4
+*.mov
+*.avi
+*.mkv
+

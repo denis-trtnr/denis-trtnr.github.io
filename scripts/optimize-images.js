@@ -14,6 +14,11 @@ const ensureDir = (dirPath) => {
 };
 
 async function processImages() {
+  const assetsDir = path.join(rootDir, 'assets');
+  if (!fs.existsSync(assetsDir)) {
+    console.log('No raw assets directory found — using pre-built images in public/images.');
+    return;
+  }
   console.log('Optimizing images for web performance...\n');
 
   const outputBase = path.join(rootDir, 'public', 'images');
