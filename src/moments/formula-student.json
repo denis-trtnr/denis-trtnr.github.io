@@ -1,12 +1,16 @@
 {
   "id": "formula-student",
-  "index": "01",
+  "index": "02",
   "year": "2020 – 2023",
   "location": "Stuttgart · Spielberg · Hockenheim",
   "title": "Engineering after lectures",
   "subtitle": "Autonomous driving, motion planning, and road trips through the night.",
   "teaser": "Developing an autonomous race car after lectures, culminating in 2nd Place Overall at Formula Student Germany.",
-  "tags": ["Formula Student", "Autonomous Driving", "Motion Planning"],
+  "tags": [
+    "Formula Student",
+    "Autonomous Driving",
+    "Motion Planning"
+  ],
   "description": [
     "For around two years, I was part of a Formula Student team developing an autonomous race car. As an Autonomous Systems Engineer, my primary focus was on motion planning and trajectory optimization, alongside business plan responsibilities and broader team operations.",
     "The real excitement came from building things outside normal working hours. One particularly memorable week started with a university exam on Monday. Directly after the exam, we drove eight hours through the Alps to the Red Bull Ring in Spielberg, Austria. The following morning, I presented at the Formula Student event. Right after, we drove back through the night because the next university exam was already scheduled for Wednesday morning.",

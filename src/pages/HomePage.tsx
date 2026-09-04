@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Hero } from '../components/Hero';
 import { About } from '../components/About';
-import { MomentsCarousel } from '../components/MomentsCarousel';
+import { MomentsSection } from '../components/MomentsSection';
 import { Footer } from '../components/Footer';
 import { heroContent, socialData } from '../data/content';
 import { getAllMoments } from '../moments';
@@ -34,7 +34,7 @@ export const HomePage: React.FC = () => {
         <div className="container">
           <hr className="editorial-divider" aria-hidden="true" />
         </div>
-        <MomentsCarousel moments={moments} />
+        <MomentsSection moments={moments} />
       </main>
       <Footer social={socialData} />
     </>

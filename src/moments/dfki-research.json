@@ -1,12 +1,16 @@
 {
   "id": "dfki-research",
-  "index": "02",
+  "index": "01",
   "year": "2022 – 2024",
   "location": "Berlin & Stuttgart",
   "title": "Research alongside a full-time job",
   "subtitle": "Where industry engineering met applied academic NLP research.",
   "teaser": "Investigating NLP model robustness and cross-corpus Named Entity Recognition on noisy real-world data alongside full-time engineering.",
-  "tags": ["DFKI Berlin", "NLP", "Named Entity Recognition"],
+  "tags": [
+    "DFKI Berlin",
+    "NLP",
+    "Named Entity Recognition"
+  ],
   "description": [
     "During my Master's studies, while working full-time at STIHL, I conducted my academic research together with the German Research Center for Artificial Intelligence (DFKI) in Berlin. It created an invigorating intersection between practical systems engineering and academic AI exploration.",
     "My study project focused on \"Evaluation of Approaches for Optimizing Cross-Corpus Named Entity Recognition\", followed by my Master's thesis on \"Quantitative Analysis of the Impact of Data Quality Issues on the Robustness of Different NER Model Architectures\".",
