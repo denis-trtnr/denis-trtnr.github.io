@@ -80,13 +80,13 @@
   ],
   "videos": [
     {
-      "src": "/videos/formulastudent/fs-highlight.mp4",
-      "label": "Highlight Clip",
-      "caption": "Highlight reel — Formula Student racing season"
+      "src": "https://media.denis-trautner.com/videos/fs-sil-compressed.mp4",
+      "label": "Simulation (SIL)",
+      "caption": "Software-in-the-Loop Simulation — Autonomous Path & Trajectory Planning"
     },
     {
-      "src": "/videos/formulastudent/fs-speedx2.mp4",
-      "label": "Onboard Speed Run",
+      "src": "https://media.denis-trautner.com/videos/fs-ontrack-compressed.mp4",
+      "label": "On-track Speed Run",
       "caption": "On-track footage — Car #77 at speed (2×)"
     }
   ]

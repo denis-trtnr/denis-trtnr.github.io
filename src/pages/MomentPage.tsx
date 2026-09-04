@@ -120,11 +120,12 @@ export const MomentPage: React.FC = () => {
                       )}
                       <video
                         controls
-                        preload="none"
+                        preload="metadata"
+                        poster={video.posterSrc}
                         className="moment-video-player"
                         playsInline
                       >
-                        <source src={video.src} type="video/mp4" />
+                        <source src={`${video.src}#t=0.001`} type="video/mp4" />
                         Your browser does not support the video tag.
                       </video>
                       {video.caption && (
