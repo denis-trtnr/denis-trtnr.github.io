@@ -13,9 +13,18 @@ export interface VideoItem {
   label?: string;
 }
 
+export interface AchievementItem {
+  placement: string;
+  event: string;
+  year?: string;
+  location?: string;
+  note?: string;
+}
+
 export interface ResearchTopic {
   type: string;
   title: string;
+  url?: string;
 }
 
 export interface Anecdote {
@@ -36,6 +45,7 @@ export interface Moment {
   tags?: string[];
   description: string[];
   anecdote?: Anecdote | null;
+  achievements?: AchievementItem[];
   researchTopics?: ResearchTopic[];
   coverImage?: ImageItem;
   images?: ImageItem[];

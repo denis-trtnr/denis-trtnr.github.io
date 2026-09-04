@@ -1,12 +1,45 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
-import { ArrowLeft, ArrowUpRight, Layers, PlayCircle } from 'lucide-react';
+import { ArrowLeft, ArrowUpRight, Layers, PlayCircle, Trophy } from 'lucide-react';
 import { getMomentById, getAllMoments } from '../moments';
 import { Lightbox } from '../components/Lightbox';
 import { Footer } from '../components/Footer';
 import { socialData } from '../data/content';
 import type { ImageItem } from '../types';
 import '../styles/moment-page.css';
+
+const renderTextWithLinks = (text: string) => {
+  const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+  const parts: React.ReactNode[] = [];
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+
+  while ((match = linkRegex.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(text.substring(lastIndex, match.index));
+    }
+    const [, label, url] = match;
+    const isExternal = url.startsWith('http://') || url.startsWith('https://');
+    parts.push(
+      <a
+        key={match.index}
+        href={url}
+        target={isExternal ? '_blank' : undefined}
+        rel={isExternal ? 'noopener noreferrer' : undefined}
+        className="moment-link"
+      >
+        {label}
+      </a>
+    );
+    lastIndex = match.index + match[0].length;
+  }
+
+  if (lastIndex < text.length) {
+    parts.push(text.substring(lastIndex));
+  }
+
+  return parts.length > 0 ? parts : text;
+};
 
 export const MomentPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -81,28 +114,87 @@ export const MomentPage: React.FC = () => {
               {/* Description paragraphs */}
               <div className="moment-description">
                 {moment.description.map((para, i) => (
-                  <p key={i}>{para}</p>
+                  <p key={i}>{renderTextWithLinks(para)}</p>
                 ))}
               </div>
+
+              {/* Key Achievements */}
+              {moment.achievements && moment.achievements.length > 0 && (
+                <div className="moment-achievements">
+                  <p className="moment-achievements-label">
+                    <Trophy size={13} aria-hidden="true" />
+                    Key Results &amp; Achievements
+                  </p>
+                  <div className="moment-achievements-grid">
+                    {moment.achievements.map((ach, i) => (
+                      <div key={i} className="moment-achievement-card">
+                        <div className="moment-achievement-badge">
+                          <span className="moment-achievement-placement">{ach.placement}</span>
+                          {ach.year && <span className="moment-achievement-year">{ach.year}</span>}
+                        </div>
+                        <div className="moment-achievement-content">
+                          <span className="moment-achievement-event">{ach.event}</span>
+                          {ach.location && (
+                            <span className="moment-achievement-loc">{ach.location}</span>
+                          )}
+                          {ach.note && (
+                            <span className="moment-achievement-note">{ach.note}</span>
+                          )}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
 
               {/* Anecdote pull-quote */}
               {moment.anecdote && (
                 <blockquote className="moment-anecdote">
                   <span className="moment-anecdote-label">{moment.anecdote.headline}</span>
-                  <span className="moment-anecdote-text">{moment.anecdote.text}</span>
+                  <span className="moment-anecdote-text">{renderTextWithLinks(moment.anecdote.text)}</span>
                 </blockquote>
               )}
 
               {/* Research topics */}
               {moment.researchTopics && moment.researchTopics.length > 0 && (
                 <div className="moment-research">
-                  <p className="moment-research-label">Academic Research</p>
-                  {moment.researchTopics.map((topic, i) => (
-                    <div key={i} className="moment-research-card">
-                      <span className="moment-research-type">{topic.type}</span>
-                      <span className="moment-research-title">{topic.title}</span>
-                    </div>
-                  ))}
+                  <p className="moment-research-label">Academic Research &amp; Code</p>
+                  {moment.researchTopics.map((topic, i) => {
+                    const cardContent = (
+                      <>
+                        <div className="moment-research-card-header">
+                          <span className="moment-research-type">{topic.type}</span>
+                          {topic.url && (
+                            <span className="moment-research-arrow" aria-hidden="true">
+                              <ArrowUpRight size={14} />
+                            </span>
+                          )}
+                        </div>
+                        <span className="moment-research-title">{topic.title}</span>
+                        {topic.url && (
+                          <span className="moment-research-repo">
+                            {topic.url.replace(/^https?:\/\//, '')}
+                          </span>
+                        )}
+                      </>
+                    );
+
+                    return topic.url ? (
+                      <a
+                        key={i}
+                        href={topic.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="moment-research-card is-link"
+                      >
+                        {cardContent}
+                      </a>
+                    ) : (
+                      <div key={i} className="moment-research-card">
+                        {cardContent}
+                      </div>
+                    );
+                  })}
                 </div>
               )}
 
@@ -120,12 +212,21 @@ export const MomentPage: React.FC = () => {
                       )}
                       <video
                         controls
-                        preload="metadata"
+                        preload="auto"
                         poster={video.posterSrc}
                         className="moment-video-player"
                         playsInline
+                        src={`${video.src}#t=0.5`}
+                        onLoadedMetadata={(e) => {
+                          const v = e.currentTarget;
+                          if (v.currentTime < 0.1) {
+                            try {
+                              v.currentTime = 0.5;
+                            } catch (_) {}
+                          }
+                        }}
                       >
-                        <source src={`${video.src}#t=0.001`} type="video/mp4" />
+                        <source src={`${video.src}#t=0.5`} type="video/mp4" />
                         Your browser does not support the video tag.
                       </video>
                       {video.caption && (
@@ -155,7 +256,13 @@ export const MomentPage: React.FC = () => {
                       <img
                         src={heroImage.jpegSrc}
                         alt={heroImage.alt}
-                        className="moment-photo-img is-hero-img"
+                        className={`moment-photo-img is-hero-img ${
+                          heroImage.aspectRatio === 'portrait'
+                            ? 'is-portrait'
+                            : heroImage.aspectRatio === 'wide'
+                            ? 'is-wide'
+                            : ''
+                        }`}
                         loading="eager"
                       />
                     </picture>
@@ -174,7 +281,13 @@ export const MomentPage: React.FC = () => {
                     {restImages.map((img, i) => (
                       <div
                         key={i}
-                        className="moment-photo-item"
+                        className={`moment-photo-item ${
+                          img.aspectRatio === 'wide'
+                            ? 'is-wide'
+                            : img.aspectRatio === 'portrait'
+                            ? 'is-portrait'
+                            : ''
+                        }`}
                         onClick={() => setLightboxImage(img)}
                         role="button"
                         tabIndex={0}
@@ -186,7 +299,13 @@ export const MomentPage: React.FC = () => {
                           <img
                             src={img.jpegSrc}
                             alt={img.alt}
-                            className={`moment-photo-img ${img.aspectRatio === 'wide' ? 'is-wide' : ''}`}
+                            className={`moment-photo-img ${
+                              img.aspectRatio === 'wide'
+                                ? 'is-wide'
+                                : img.aspectRatio === 'portrait'
+                                ? 'is-portrait'
+                                : ''
+                            }`}
                             loading="lazy"
                           />
                         </picture>

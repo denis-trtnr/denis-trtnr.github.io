@@ -1,18 +1,17 @@
 {
   "id": "dfki-research",
   "index": "01",
-  "year": "2022 – 2024",
-  "location": "Berlin & Stuttgart",
+  "year": "2024 – 2025",
+  "location": "Berlin",
   "title": "Research alongside a full-time job",
-  "subtitle": "Where industry engineering met applied academic NLP research.",
+  "subtitle": "Applied NLP research during my Master’s degree.",
   "teaser": "Investigating NLP model robustness and cross-corpus Named Entity Recognition on noisy real-world data alongside full-time engineering.",
   "tags": [
     "DFKI Berlin",
-    "NLP",
-    "Named Entity Recognition"
+    "NLP"
   ],
   "description": [
-    "During my Master's studies, while working full-time at STIHL, I conducted my academic research together with the German Research Center for Artificial Intelligence (DFKI) in Berlin. It created an invigorating intersection between practical systems engineering and academic AI exploration.",
+    "During my part-time master degree at DHBW CAS, while working full-time at STIHL, I conducted my academic research together with the German Research Center for Artificial Intelligence (DFKI) in Berlin.",
     "My study project focused on \"Evaluation of Approaches for Optimizing Cross-Corpus Named Entity Recognition\", followed by my Master's thesis on \"Quantitative Analysis of the Impact of Data Quality Issues on the Robustness of Different NER Model Architectures\".",
     "Rather than relying purely on benchmark metrics, I became interested in how NLP models behave when they leave ideal laboratory conditions and encounter imperfect, noisy, or heterogeneous real-world data."
   ],
@@ -20,11 +19,13 @@
   "researchTopics": [
     {
       "type": "Master's Thesis",
-      "title": "Quantitative Analysis of the Impact of Data Quality Issues on the Robustness of Different NER Model Architectures"
+      "title": "Quantitative Analysis of the Impact of Data Quality Issues on the Robustness of Different NER Model Architectures",
+      "url": "https://github.com/denis-trtnr/ner-quality-impact"
     },
     {
-      "type": "Study Project",
-      "title": "Evaluation of Approaches for Optimizing Cross-Corpus Named Entity Recognition"
+      "type": "Research Project",
+      "title": "Evaluation of Approaches for Optimizing Cross-Corpus Named Entity Recognition",
+      "url": "https://github.com/denis-trtnr/Cross-Corpus-NER"
     }
   ],
   "coverImage": {

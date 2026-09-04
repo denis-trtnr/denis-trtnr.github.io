@@ -1,24 +1,25 @@
 {
   "id": "formula-student",
   "index": "02",
-  "year": "2020 – 2023",
-  "location": "Stuttgart · Spielberg · Hockenheim",
-  "title": "Engineering after lectures",
-  "subtitle": "Autonomous driving, motion planning, and road trips through the night.",
-  "teaser": "Developing an autonomous race car after lectures, culminating in 2nd Place Overall at Formula Student Germany.",
+  "year": "2021 – 2023",
+  "location": "Stuttgart · Spielberg · Hockenheim · Assen",
+  "title": "Formula Student after lectures",
+  "subtitle": "Autonomous driving, motion planning, and road trips between exam weeks.",
+  "teaser": "Autonomous motion planning on ROS, workshop testing, and racing at international Grand Prix circuits alongside university studies.",
   "tags": [
     "Formula Student",
-    "Autonomous Driving",
-    "Motion Planning"
+    "Autonomous Driving"
   ],
   "description": [
-    "For around two years, I was part of a Formula Student team developing an autonomous race car. As an Autonomous Systems Engineer, my primary focus was on motion planning and trajectory optimization, alongside business plan responsibilities and broader team operations.",
-    "The real excitement came from building things outside normal working hours. One particularly memorable week started with a university exam on Monday. Directly after the exam, we drove eight hours through the Alps to the Red Bull Ring in Spielberg, Austria. The following morning, I presented at the Formula Student event. Right after, we drove back through the night because the next university exam was already scheduled for Wednesday morning.",
-    "The intense combination of lectures, late-night workshop engineering, and racing culminated at Formula Student Germany 2022, where our team took 2nd Place Overall in the electric vehicle category."
+    "Formula Student is the world's largest student engineering competition, bringing together hundreds of international university teams each year to design, build, and race high-performance formula-style cars at renowned Grand Prix circuits like Hockenheimring, Red Bull Ring, and TT Circuit Assen.",
+    "For two years, I was part of [DHBW Engineering Stuttgart e.V.](https://www.dhbw-engineering.de/), contributing across both technical engineering and team operations. As an Autonomous Systems Engineer, I worked on the vehicle's motion planning pipeline. In parallel, I was active in the Statics and Marketing team, managing financial planning and presenting in front of industry judges.",
+    "Our autonomous driving stack relied on localization and perception data from cameras and LiDAR. Within the motion planning pipeline, I worked on adapting and optimizing a beam search algorithm, refining cost functions, and implementing path smoothing via clothoids (Euler spirals) to generate smooth, continuous-curvature trajectories at racing speeds. Software development was built on ROS with mission data telemetry analyzed in Foxglove Studio, validated through extensive Software-in-the-Loop (SiL) and Hardware-in-the-Loop (HiL) testing sessions.",
+    "Our key achievements included 1st Place Overall at Formula Student Netherlands in Assen (2022), 3rd Place Overall at Formula Student Austria at the Red Bull Ring (2022), and 2nd Place Overall at Formula Student Germany at Hockenheimring (2022). The following season culminated in 3rd Place Overall at FS Germany 2023, where our team successfully finished both driverless dynamic disciplines for the first time.",
+    "Looking back, what stands out just as much as the track days is the balance between work, university, and the countless construction and late-night testing sessions in the workshop."
   ],
   "anecdote": {
-    "headline": "Monday Exam → Spielberg → Wednesday Exam",
-    "text": "Monday was the exam. Eight hours later we were on the road to Spielberg. Tuesday morning was the presentation at the Red Bull Ring. By Wednesday morning, I was back at university for the next exam."
+    "headline": "Monday 14:00 Exam → Spielberg → Wednesday 09:00 Exam",
+    "text": "On Monday at 14:00, I sat for a university exam. By 18:30, I set off for an 8-hour drive through the Alps to the Red Bull Ring. On Tuesday at 09:30, I held a presentation before the judges. Right after, I made the drive back to sit for my next exam on Wednesday at 09:00."
   },
   "coverImage": {
     "webpSrc": "/images/formulastudent/car-racing.webp",
@@ -45,8 +46,8 @@
     {
       "webpSrc": "/images/formulastudent/workshop-bench.webp",
       "jpegSrc": "/images/formulastudent/workshop-bench.jpg",
-      "alt": "Workshop bench covered in electronics, wiring and a Speedgoat real-time controller with a laptop running code",
-      "caption": "Late nights at the workshop bench wiring the autonomous system",
+      "alt": "Integration test with the motion controller on the workshop bench",
+      "caption": "Integration test with the motion controller",
       "aspectRatio": "landscape"
     },
     {
@@ -86,8 +87,8 @@
     },
     {
       "src": "https://media.denis-trautner.com/videos/fs-ontrack-compressed.mp4",
-      "label": "On-track Speed Run",
-      "caption": "On-track footage — Car #77 at speed (2×)"
+      "label": "On-track",
+      "caption": "On-track footage — Car #77"
     }
   ]
 }

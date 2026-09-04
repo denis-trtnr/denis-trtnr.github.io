@@ -23,13 +23,25 @@ export const About: React.FC = () => {
               >
                 STIHL
               </a>
-              , responsible for the Product Data domain within our global B2X ecosystem — encompassing PIM, DAM, Product Data Syndication, and interfaces to consumer applications and retail. While I shape target architectures and contribute to the STIHL Cloud Core Team, I stay deeply hands-on, actively building prototypes, backend services, and applied AI systems like RAG assistants and product recommendation models.
+              , responsible for the Product Data domain within our global B2X ecosystem — encompassing PIM, DAM, Product Data Syndication, and interfaces to consumer applications and retail. My work combines architecture with hands-on development, including prototypes, backend services, and applied AI solutions such as RAG assistants and product recommendation models.
             </p>
             <p>
-              Previously, I was Tech Lead for STIHL Service Communication, guiding the architecture and operations of our central aftersales portal powered by 30+ microservices.
+              Previously, I was a Tech Lead for the STIHL Service Communication, guiding the development and operations of our central aftersales portal powered by 30+ microservices.
             </p>
             <p>
-              Off my keyboard, I enjoy playing handball, skiing in the winter, and like to go running.
+              Alongside my industry work, I am a Guest Researcher at the DFKI{' '}
+              <a
+                href="https://www.dfki.de/web/forschung/forschungsbereiche/speech-and-language-technology/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="about-link"
+              >
+                Speech and Language Technology Lab
+              </a>{' '}
+              , with research interests in Information Extraction, Information Retrieval, and Graph Learning. In October 2026, my first research paper will be published at WNUT 2026 during the Conference on Empirical Methods in Natural Language Processing (EMNLP) in Budapest.
+            </p>
+            <p>
+              Off my keyboard, I enjoy playing handball, skiing in winter, and going for a run.
             </p>
           </div>
         </div>
