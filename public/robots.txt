@@ -1,6 +1,7 @@
 # RFC 9309 compliant robots.txt for Denis Trautner Profile
 User-agent: *
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 # Reference Sitemap
 Sitemap: https://denis-trautner.com/sitemap.xml

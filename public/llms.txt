@@ -1,0 +1,18 @@
+# Denis Trautner — Cloud Solution Architect & AI Researcher
+
+> Personal profile and research portfolio of Denis Trautner.
+
+## About
+Denis Trautner works as a Solution Architect at STIHL, responsible for the Product Data domain within the global B2X ecosystem (PIM, DAM, Product Data Syndication, RAG assistants, product recommendation models).
+Alongside industry work, Denis is a Guest Researcher at the German Research Center for Artificial Intelligence (DFKI) Speech and Language Technology Lab in Berlin, focusing on Information Extraction, Information Retrieval, and Graph Learning. His first academic paper will be published at WNUT 2026 during the Conference on Empirical Methods in Natural Language Processing (EMNLP) in Budapest.
+
+## Selected Moments & Projects
+- [Formula Student Electric & Driverless](https://denis-trautner.com/moments/formula-student): Head of Electronics and telemetry lead for the electric/driverless race car at Formula Student Germany and Austria.
+- [Texas High School Exchange](https://denis-trautner.com/moments/texas-exchange): High school exchange year at A&M Consolidated High School in College Station, Texas.
+- [DFKI NLP Research & Publications](https://denis-trautner.com/moments/dfki-research): Academic research at DFKI Speech and Language Technology Lab, publications on structured information extraction.
+
+## Canonical Links & Profiles
+- Website: https://denis-trautner.com/
+- GitHub: https://github.com/denis-trtnr
+- LinkedIn: https://linkedin.com/in/denis-trautner
+- Sitemap: https://denis-trautner.com/sitemap.xml
