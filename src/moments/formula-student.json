@@ -37,18 +37,25 @@
       "aspectRatio": "landscape"
     },
     {
-      "webpSrc": "/images/formulastudent/car-reveal.webp",
-      "jpegSrc": "/images/formulastudent/car-reveal.jpg",
-      "alt": "Unveiling the autonomous Formula Student race car under atmospheric stage lighting",
-      "caption": "Car reveal after months of late-night engineering",
-      "aspectRatio": "portrait"
-    },
-    {
       "webpSrc": "/images/formulastudent/workshop-bench.webp",
       "jpegSrc": "/images/formulastudent/workshop-bench.jpg",
       "alt": "Integration test with the motion controller on the workshop bench",
       "caption": "Integration test with the motion controller",
       "aspectRatio": "landscape"
+    },
+    {
+      "webpSrc": "/images/formulastudent/fsa-2023-cheque.webp",
+      "jpegSrc": "/images/formulastudent/fsa-2023-cheque.jpg",
+      "alt": "Team celebrating at Formula Student Austria 2023 with giant novelty cheque",
+      "caption": "FSA 2023 — Team celebrating at Spielberg",
+      "aspectRatio": "landscape"
+    },
+    {
+      "webpSrc": "/images/formulastudent/car-reveal.webp",
+      "jpegSrc": "/images/formulastudent/car-reveal.jpg",
+      "alt": "Unveiling the autonomous Formula Student race car under atmospheric stage lighting",
+      "caption": "Car reveal after months of late-night engineering",
+      "aspectRatio": "portrait"
     },
     {
       "webpSrc": "/images/formulastudent/red-bull-ring.webp",
@@ -63,13 +70,6 @@
       "alt": "Formula Student Germany 2022 award ceremony celebrating 2nd Place Overall",
       "caption": "DHBW Engineering Stuttgart — 2nd Place Overall at FSG 2022",
       "aspectRatio": "wide"
-    },
-    {
-      "webpSrc": "/images/formulastudent/fsa-2023-cheque.webp",
-      "jpegSrc": "/images/formulastudent/fsa-2023-cheque.jpg",
-      "alt": "Team celebrating at Formula Student Austria 2023 with giant novelty cheque",
-      "caption": "FSA 2023 — Team celebrating at Spielberg",
-      "aspectRatio": "landscape"
     },
     {
       "webpSrc": "/images/formulastudent/fsg-teams-panorama.webp",
